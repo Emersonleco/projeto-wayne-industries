@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário</title>
+    <link rel="icon" type="image/x-icon" href="../image/icon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='inventario.css'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a6d53cfa0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-title">
+        <h1 class="title">inventário</h1>
+        <img src="../image/icon.png" alt="icone-empresa">
+    </div>
+    <div class="container">
+        <div class="nav">
+            <div class="active"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="nav-content">
+            <div class="active">
+                <input type="text" id="termo-busca" placeholder="Buscar">
+                <botton class="button-form" onclick="searchEquipamento()"><i class="fa-solid fa-magnifying-glass"></i></botton>
+                <botton class="button-form" onclick="listarItens(itens)"><i class="fa-solid fa-arrows-rotate"></i></botton>
+            </div>
+            <div>
+                <input type="text" id="titulo" placeholder="Item">
+                <input type="number" id="quantidade" placeholder="quantidade">
+                <botton class="button-form nav-icon" onclick="addItens()"><i class="fa-solid fa-plus"></i></botton>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo">
+        <ul class="cabecalho">
+            <li style="width: 240px;"><a>Item</a></li>
+            <li><a>Quantidade</a></li>
+            <li><a>Opçoes</a></li>
+        </ul>
+        <div class="catalogo"> 
+        </div>
+    </div>
+    <script  src="inventario.js"></script>
+</body>
+</html>

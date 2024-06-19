@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos</title>
+    <link rel="icon" type="image/x-icon" href="../image/icon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='veiculos.css'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a6d53cfa0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-title">
+        <h1 class="title">veículos</h1>
+        <img src="../image/icon.png" alt="icone-empresa">
+    </div>
+    <div class="container">
+        <div class="nav">
+            <div class="active"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-plus"></i></div>
+        </div>
+        <div class="nav-content">
+            <div class="active">
+                <input type="text" id="termo-busca" placeholder="Buscar">
+                <botton class="button-form" onclick="searchVeiculos()"><i class="fa-solid fa-magnifying-glass"></i></botton>
+                <botton class="button-form" onclick="listarVeiculos(veiculos)"><i class="fa-solid fa-arrows-rotate"></i></botton>
+            </div>
+            <div>
+                <input type="text" id="titulo" placeholder="Veículo" disabled>
+                <label for="disponibilidade" >Disponivel: </label>
+                    <select id="disponibilidade" name="disponibilidade"disabled>
+                        <option value="sim">SIM</option>
+                        <option value="nao">NÃO</option>
+                    </select>
+                <botton class="button-form nav-icon" onclick="alert('Usuário não tem permissão de acesso! Contate um gerente.')"><i class="fa-solid fa-plus"></i></botton>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo">
+        <ul class="cabecalho">
+            <li style="width: 240px;"><a>Item</a></li>
+            <li><a>disponibilidade</a></li>
+            <li><a>Opçoes</a></li>
+        </ul>
+        <div class="catalogo"> 
+        </div>
+    </div>
+    <script  src="veiculos-funcionario.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne Industries</title>
+    <link rel="icon" type="image/x-icon" href="./image/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container-login">
+        <div class="logo-lateral">
+            <img src="./image/logo.png" id="icon" alt="User Icon" />
+        </div>
+        <div class="card-login">
+            <h1 class="title-login">Login</h1>
+            <form method="post" class="form" onsubmit="return login()">
+                <label for="user-type">Tipo de Usuário:</label>
+                    <select id="user-type" name="user-type" class="form-control">
+                        <option value="funcionario">Funcionário</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="admin">Adm Segurança</option>
+                    </select>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="Usuário" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Senha" required>
+                </div>
+                <input type="submit" class="btn-entrar" value="Entrar">
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+#container-vertical{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: #011F26;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#container-horizontal{
+    display: inline;
+    width: 100%;
+    padding: 10%;
+}
+
+#painel-botoes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.botao{
+    background: #026873;
+    width: 30%;
+    flex-grow: 1;
+    margin: 10px;
+    height: 20vh;
+    border-radius: 10px;
+    box-shadow: 2px 6px 28px -11px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botao:hover{
+    box-shadow: 4px 6px 43px -10px #CCC !important;
+    position: relative;
+    bottom: -2px;
+    background: #FFF;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.icone-botao{
+    font-size: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    color: #c8dde8
+}
+
+.nome-botao{
+    width: 100%;
+    text-align: center;
+    background: #c8dde8;
+    padding: 5px 0px;
+    border-radius: inherit;
+    box-shadow: 0px -11px 10px -14px #696969;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: center;
+    font-size: 2vh;
+    text-transform: uppercase;
+    color: #151515;
+}
+

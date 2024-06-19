@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #011F26;
+}
+h1, h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+h3{
+  font-size: 1rem;
+}
+.h3-titulo{
+  width: 250px;
+}
+.h3-quantidade{
+  width: 30px;
+  text-align: center;
+}
+
+.container {
+  display:flex;
+  max-width: 800px;
+  margin: 15px auto;
+  border-radius: 5px;
+  height: 70px;
+}
+
+.container-title{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+img{
+  width: 5%;
+  height: 5%;
+  margin-inline-start: 30px;
+
+}
+.title{
+  color: #fbfeff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #F2668B;
+}
+
+.cabecalho{
+  text-transform: uppercase;
+  font: size 1.4em;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  background-color: #026873;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+input[type="text"], button {
+  margin: 5px;
+  padding: 8px;
+  color: black;
+  width: calc(100%, 22px);
+}
+
+.button-form{ 
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;}
+
+#catalogo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#termo-busca{
+  color: black;
+  width: 650px;
+  border-radius: 5px;
+  border: none;
+}
+
+#form-cadastro, #form-busca {
+  margin-bottom: 20px;
+}
+
+#titulo {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 500px;
+}
+
+#quantidade {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 110px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  height: 50px;
+}
+
+
+/* ////////// */
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  width: 70px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.nav div{
+  background-color:#026873;
+  color: #fff;
+  height: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px 0px 0px 5px;
+}
+
+
+.nav-content{
+  display: flex;
+  background-color: #0CABA8;
+  color: #fff;
+  width: 100%;
+  border-radius: 0px 5px 5px 0px;
+  align-items: center;
+  padding: 10px;
+  justify-content: right;
+}
+
+.nav-content h1{
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+.nav-content p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.nav-content div{
+  display: none;
+}
+
+.nav-content .active{
+  display: block;
+}
+
+.nav .active{
+  background-color: #0CABA8;
+}
